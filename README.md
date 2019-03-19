@@ -1,29 +1,16 @@
-# cnode-demo
+# vue-cnode-demo
+Use of cnodejs.org API, based on vuejs rewrite.
 
-## Project setup
+![cnode-demo](static/cnode-demo.png)
+
+## Installation
 ```
+# clone the project
+git clone git@github.com:Gasbylei/vue-cnode-demo.git
+
+# install dependency
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# develop
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
