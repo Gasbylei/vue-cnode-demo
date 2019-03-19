@@ -1,14 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <TheHeader/>
+    <div id="main-container">
+      <router-view></router-view>
     </div>
-    <router-view/>
   </div>
 </template>
 
+<script>
+import TheHeader from './components/layouts/TheHeader.vue'
+
+export default {
+  name: 'app',
+  components: {
+    TheHeader
+  }
+}
+</script>
+
 <style lang="scss">
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "~font-awesome/fonts/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "~font-awesome/scss/font-awesome";
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,14 +31,14 @@
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e1e1e1;
+}
+.alert {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
